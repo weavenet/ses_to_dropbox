@@ -14,7 +14,8 @@ Tested with **Python 2.7**.
 
 * Create a [Dropbox app and oauth token](https://blogs.dropbox.com/developers/2014/05/generate-an-access-token-for-your-own-account/).
 
-* Create cloud formation template via the AWS console and provide the token created above.
+* Create Cloud Formation stack from the provided [template](https://raw.githubusercontent.com/weavenet/ses_to_dropbox/master/cloud_formation_templates/lambda.json).
+provide the token created above as well as a unique prefix name for the bucket.
 
 ### Deploy Updated Code
 
@@ -32,7 +33,7 @@ pip install -r requirements.txt
 bash scripts/deploy.sh us-west-2
 ```
 
-Update your SES rule to place the object in the S3 bucket (directions [here](http://docs.aws.amazon.com/ses/latest/DeveloperGuide/receiving-email-action-s3.html)).
+* Update your SES rule to place the object in the S3 bucket (directions [here](http://docs.aws.amazon.com/ses/latest/DeveloperGuide/receiving-email-action-s3.html)).
 
 ## Test
 
