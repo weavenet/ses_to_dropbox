@@ -15,7 +15,7 @@ Tested with **Python 2.7**.
 * Create a [Dropbox app and oauth token](https://blogs.dropbox.com/developers/2014/05/generate-an-access-token-for-your-own-account/).
 
 * Create Cloud Formation stack from the provided [template](https://raw.githubusercontent.com/weavenet/ses_to_dropbox/master/cloud_formation_templates/lambda.json).
-provide the token created above as well as a unique prefix name for the bucket.
+Provide the token created above as well as a unique prefix name for the bucket.
 
 ### Deploy Updated Code
 
